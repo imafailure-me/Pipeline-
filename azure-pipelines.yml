@@ -26,7 +26,3 @@ trigger:
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: '**/*.trx'
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathToPublish: '$(Build.ArtifactStagingDirectory)' 
-      artifactName: 'drop' 
