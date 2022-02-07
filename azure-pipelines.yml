@@ -65,7 +65,7 @@ jobs:
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: '**/*.trx' 
-  - publish: '$(Build.ArtifactStagingDirectory)'
+  - publish: '$(C:\Users\Laptop\Desktop\Pipeline--master)'
     artifact: drop    
 
 - job: LinuxRelease
