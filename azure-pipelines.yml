@@ -26,5 +26,7 @@ trigger:
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: '**/*.trx'
-  - publish: $(C:\Users\Laptop\Desktop\Pipeline--master)
-    artifact: drop
+- task: PublishBuildArtifacts@1
+  inputs:
+     pathToPublish: '$(Build.ArtifactStagingDirectory)' 
+     artifactName: 'drop' 
